@@ -1,0 +1,1 @@
+# nextjs-dj-events-app
