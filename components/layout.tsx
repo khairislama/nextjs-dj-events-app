@@ -1,6 +1,8 @@
 import type { AppProps } from "next/app";
 import styles from "../styles/Layout.module.css";
 import Head from "next/head";
+import Header from "./header";
+import Footer from "./footer";
 
 interface LayoutProps {
   title: string;
@@ -17,7 +19,9 @@ const Layout = ({ title, keywords, description, children }: LayoutProps) => {
         <meta name="description" content={description}></meta>
         <meta name="keywords" content={keywords}></meta>
       </Head>
+      <Header />
       <div className={styles.container}>{children}</div>
+      <Footer />
     </div>
   );
 };
