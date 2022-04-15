@@ -1,7 +1,14 @@
+import Layout from "../../components/layout";
+import { useRouter } from "next/router";
 import type { NextPage } from "next";
 
 const EventPage: NextPage = () => {
-  return <h1>My Event</h1>;
+  const router = useRouter();
+  return (
+    <Layout>
+      <h1>My Event</h1>
+    </Layout>
+  );
 };
 
 export default EventPage;
